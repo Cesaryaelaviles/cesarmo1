@@ -1,0 +1,15 @@
+{
+ "short_name": "cesarmo1",
+ "name": "cesarmo1",
+ "start_url": "/index.html",
+ "display": "standalone",
+ "background_color": "#00FFFF",
+ "theme_color": "#CC3399",
+ "icons": [
+   {
+     "src": "img/logo.png",
+     "sizes": "1024x1024",
+     "type": "image/png"
+   }
+ ]
+}
