@@ -42,8 +42,14 @@
 
  </head>
   <body>
- 	<center>
-   <h1>Cesar</h1>
+  <form name="vista1">
+     <header>
+       <h1>Ejemplo de PWA</h1>
+     </header>
+     <main role="main">
+       <p><output name="mensaje">Cargando Firebase SDK&hellip;</output></p>
+     </main>
+   </form>
    <form name="vista">
      <p>
       <h2>Ingrese primer calificacion</h2>
@@ -113,7 +119,7 @@
          let app = firebase.app();
          let features = ['auth', 'database', 'messaging', 'storage']
            .filter(feature => typeof app[feature] === 'function');
-         document.vista.mensaje.value =
+         document.vista1.mensaje.value =
            `Firebase SDK cargó con: ${features.join(', ')}`;
        } catch (e) {
          console.log(e);
